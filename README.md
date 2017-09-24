@@ -1,4 +1,8 @@
-# Boilerplate Go Application with REST Server
+# Boilerplate Go Package
+* REST Server included
+* Cloud ready and all steps in Docker
+
+[![asciicast](https://asciinema.org/a/mw1363jxJNmqdycXx39Ol6LpJ.png)](https://asciinema.org/a/mw1363jxJNmqdycXx39Ol6LpJ)
 
 ## Requirements
 * Docker (> version 17.05)
