@@ -24,7 +24,7 @@ make run
 
 ## Push
 ```
-make push DOCKER_REGISTRY=$REGISTRY
+make push
 ```
 
 ## Example Flow
