@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: boilerplate-go
+  labels:
+    app: boilerplate-go
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: boilerplate-go
+  template:
+    metadata:
+      labels:
+        app: boilerplate-go
+    spec:
+      containers:
+      - name: boilerplate-go
+        image: onuryilmaz/boilerplate-go
+        ports:
+        - containerPort: 8080
