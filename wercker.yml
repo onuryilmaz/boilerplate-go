@@ -1,0 +1,15 @@
+box:
+  id: golang
+  ports:
+    - "5000"
+
+build:
+  steps:
+    - script:
+        name: go test
+        code: |
+          go test -v ./...
+    - script:
+        name: go build 
+        code: |
+          go build github.com/onuryilmaz/boilerplate-go/cmd
