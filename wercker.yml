@@ -1,12 +1,13 @@
-box:
-  id: google/golang
 build:
-  steps:
+    box: google/golang
+    steps:
+
+    # Test the project
     - script:
         name: go test
-        code: |
-          go test -v ./...
+        code: go test ./...
+
+    # Statically build the project
     - script:
-        name: go build 
-        code: |
-          go build github.com/onuryilmaz/boilerplate-go/cmd
+        name: go build
+        code: go build  github.com/onuryilmaz/boilerplate-go/cmd -o boilerplate-go
