@@ -1,8 +1,5 @@
 box:
-  id: golang
-  ports:
-    - "5000"
-
+  id: golang:1.5.0
 build:
   steps:
     - script:
