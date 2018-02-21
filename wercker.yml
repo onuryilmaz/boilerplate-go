@@ -3,9 +3,8 @@ build:
 
     steps:
 
-    - script:
-        name: go get
-        code: go get -v github.com/onuryilmaz/boilerplate-go/cmd
+    - wercker/setup-go-workspace:
+      package-dir: github.com/onuryilmaz/boilerplate-go
 
     # Test the project
     - script:
