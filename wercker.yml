@@ -1,11 +1,7 @@
 build:
-    box: google/golang
+    box: golang:latest
     steps:
-
-    - script:
-        name: go get
-        code: go get ./...
-
+    
     # Test the project
     - script:
         name: go test
