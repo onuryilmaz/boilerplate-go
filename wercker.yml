@@ -2,6 +2,10 @@ build:
     box: google/golang
     steps:
 
+    - script:
+        name: go get
+        code: go get ./...
+
     # Test the project
     - script:
         name: go test
